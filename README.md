@@ -1,4 +1,3 @@
-```markdown
 # Zotter 📝
 
 **Zotter** is a lightning-fast, terminal-based note-taking tool built for developers who live in the command line. It allows you to capture thoughts, categorize ideas, and search your history without ever leaving your terminal.
