@@ -127,5 +127,3 @@ zotter delete 1
 ---
 
 *Enjoy using Zotter!* 🚀
-
-```
