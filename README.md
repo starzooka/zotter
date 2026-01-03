@@ -7,11 +7,11 @@ Built with **Python**, **Typer**, and **Rich**.
 ---
 
 ## 📑 Table of Contents
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage Guide](#-usage-guide)
-- [Trash Management](#-trash-management)
-- [Tech Stack](#-tech-stack)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage Guide](#usage-guide)
+- [Trash Management](#trash-management)
+- [Tech Stack](#tech-stack)
 
 ---
 
