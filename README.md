@@ -1,9 +1,19 @@
-
 # Zotter 📝
 
 **Zotter** is a lightning-fast, terminal-based note-taking tool built for developers who live in the command line. It allows you to capture thoughts, categorize ideas, and search your history without ever leaving your terminal.
 
 Built with **Python**, **Typer**, and **Rich**.
+
+---
+
+## 📑 Table of Contents
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Trash Management](#-trash-management)
+- [Tech Stack](#-tech-stack)
+
+---
 
 ## ✨ Features
 
@@ -23,7 +33,7 @@ Built with **Python**, **Typer**, and **Rich**.
 * **Git** (Optional, for easier updates)
 
 ### Option A: Using Git (Recommended)
-This is the best way to keep the app updated.
+*Best for keeping the app updated.*
 
 1.  **Clone the repository**
     ```bash
@@ -32,49 +42,73 @@ This is the best way to keep the app updated.
     ```
 
 2.  **Create a Virtual Environment**
-    - **Windows:** `python -m venv venv` then `.\venv\Scripts\activate`
-    - **Mac/Linux:** `python3 -m venv venv` then `source venv/bin/activate`
+    * **Windows:**
+      ```powershell
+      python -m venv venv
+      .\venv\Scripts\activate
+      ```
+    * **Mac/Linux:**
+      ```bash
+      python3 -m venv venv
+      source venv/bin/activate
+      ```
 
 3.  **Install the App**
     ```bash
     pip install --editable .
     ```
 
----
-
 ### Option B: Without Git (Manual Download)
-
-If you don't have Git installed, follow these steps:
+*Best if you don't have Git installed.*
 
 1. **Download the Code**
-    * Click the green **Code** button at the top of this page.
-    * Select **Download ZIP**. 
-    * Extract the ZIP folder to your computer.
+  * - Click the green **Code** button at the top of this page.
+    - Select **Download ZIP**.
+    - Extract the ZIP folder to your computer.
 
 2. **Open Terminal**
-    * Open your terminal or command prompt and navigate into the extracted folder.
+    - Open your terminal or command prompt and navigate into the extracted folder.
 
 3. **Install the App**
 
-    **Windows:**
-    ```powershell
-    python -m venv venv
-    .\venv\Scripts\activate
-    pip install --editable .
-    ```
-
-    **Mac/Linux:**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install --editable .
-    ```
-4. **Verify Installation**
-
-```bash
-zotter --help
+  **Windows:**
+  ```powershell
+  python -m venv venv
+  .\venv\Scripts\activate
+  pip install --editable .
 
 ```
+
+**Mac/Linux:**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install --editable .
+
+```
+
+### Option C: Global Install (Pipx) 🏆
+
+*Best for running Zotter from ANY directory without activating environments.*
+
+1. **Install pipx** (if you haven't already):
+```bash
+python -m pip install --user pipx
+python -m pipx ensurepath
+
+```
+
+
+*(Restart your terminal after this step)*
+2. **Install Zotter:**
+```bash
+# Navigate to the zotter folder first
+pipx install .
+
+```
+
+
 
 ---
 
@@ -160,7 +194,7 @@ zotter burn 1
 
 ### Incinerate
 
-Permanently destroy **all** items in the Trash. **Burns all the items present in Trash.**
+Permanently destroy **all** items in the Trash.
 
 ```bash
 zotter incinerate
@@ -184,3 +218,4 @@ zotter incinerate
 ---
 
 *Enjoy using Zotter!* 🚀
+
